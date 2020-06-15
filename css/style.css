@@ -1,0 +1,78 @@
+/*Blue-bg*/
+.blue-bg {
+	background-color: blue;
+	padding: 40px 0 90px 0; 
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.d-flex {
+	display: flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.video-wraper {
+	width: 570px;
+	height: 320px;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.video-wraper iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/*Light grey section*/
+.light-grey {
+	background-color: #E6E6E6;
+	padding-top: 40px 0 30px 0;
+}
+.article-wraper {
+	display: flex;
+	justify-content: space-between;
+
+}
+.article-box {
+	background-color: #F2F2F2;
+	width: 570px;
+	height: 225px;
+	padding: 15px;
+}
+.mshobeli-article {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top:30px;
+}
+.mshobeli-article p {
+	width: 355px;
+}
+.read {
+	display: flex;
+	justify-content: flex-end;
+}
+.images-wraper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.image-box {
+	width: 270px;
+}
+.image-box img {
+	width: 100%;
+}
+.social {
+	margin-top:50px;
+	margin-bottom: 50px;
+}
+.fb-icon {
+	font-size: 30px;
+	color: blue;
+}
+.fb-icon:hover {
+	color: red;
+}
