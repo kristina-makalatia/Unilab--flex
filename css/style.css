@@ -4,16 +4,19 @@
 	padding: 40px 0 90px 0; 
 }
 .container {
-	width: 1170px;
+	max-width: 1170px;
+	width: 100%;
 	margin: 0 auto;
 }
 .d-flex {
 	display: flex;
 	justify-content:space-between;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
+	align-items: center;
 }
 .video-wraper {
-	width: 570px;
+	max-width: 570px;
+	width: 100%;
 	height: 320px;
 	background-color: #fff;
 	display: flex;
@@ -25,6 +28,33 @@
 	height: 100%;
 }
 
+.logo img {
+	height: 80px;
+}
+.nav-ul {
+	display: flex;
+}
+.nav-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.social {
+	display: none;
+}
+.burger {
+	color: red;
+	font-size: 30px;
+	transition: all 0.2s linear;
+}
+.burger:hover {
+	cursor: pointer;
+	color: aqua;
+}
+.right-block {
+	display: flex;
+	align-items: center;
+}
 /*Light grey section*/
 .light-grey {
 	background-color: #E6E6E6;
@@ -33,11 +63,13 @@
 .article-wraper {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
 }
 .article-box {
 	background-color: #F2F2F2;
-	width: 570px;
+	max-width: 570px;
+	width: 100%;
 	height: 225px;
 	padding: 15px;
 }
@@ -48,7 +80,8 @@
 	margin-top:30px;
 }
 .mshobeli-article p {
-	width: 355px;
+	max-width: 355px;
+	width: 100%;
 }
 .read {
 	display: flex;
@@ -76,3 +109,4 @@
 .fb-icon:hover {
 	color: red;
 }
+

@@ -1,0 +1,62 @@
+@media (max-width: 1160px) {
+	.video-wraper {
+		max-width: 400px;
+		width: 100%;
+	}
+	.container {
+		padding: 0 15px;
+	}
+	.article-wraper {
+		justify-content: center;
+	}
+	.image-box {
+		width: 48%;
+	}
+/*	.image-box:nth-child(3),
+	.image-box:nth-child(2),
+	.image-box:last-child {
+		display: none;
+	}*/
+}
+
+
+@media (max-width: 1024px) {
+	.blue-bg {
+		background-color: pink;
+	}
+}
+@media (max-width: 806px) {
+	.d-flex {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.video-wraper:first-child {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.blue-bg {
+		background-color: yellow;
+	}
+}
+@media (max-width: 480px) {
+	.mshobeli-article {
+		flex-direction: column;
+	}
+	.article-box {
+		height: auto;
+	}
+	.image-box {
+		width: 100%;
+	}
+/*	.navigation {
+		display: none;
+	}*/
+	.navigation-li:not(.active) {
+		display: none;
+	}
+	.social {
+		display: block;
+	}
+}
