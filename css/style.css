@@ -1,3 +1,11 @@
+.header-wraper {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c3d9ff+8,b1c8ef+31,98b0d9+47 */
+	background: #c3d9ff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #c3d9ff 8%, #b1c8ef 31%, #98b0d9 47%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #c3d9ff 8%,#b1c8ef 31%,#98b0d9 47%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #c3d9ff 8%,#b1c8ef 31%,#98b0d9 47%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3d9ff', endColorstr='#98b0d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 /*Blue-bg*/
 .blue-bg {
 	background-color: blue;
@@ -9,19 +17,31 @@
 	margin: 0 auto;
 }
 .d-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content:space-between;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
 	/*flex-wrap: wrap;*/
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .video-wraper {
 	max-width: 570px;
 	width: 100%;
 	height: 320px;
 	background-color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .video-wraper iframe {
 	width: 100%;
@@ -32,12 +52,20 @@
 	height: 80px;
 }
 .nav-ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .nav-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .social {
 	display: none;
@@ -45,6 +73,8 @@
 .burger {
 	color: red;
 	font-size: 30px;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
 .burger:hover {
@@ -52,8 +82,12 @@
 	color: aqua;
 }
 .right-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 /*Light grey section*/
 .light-grey {
@@ -61,9 +95,14 @@
 	padding-top: 40px 0 30px 0;
 }
 .article-wraper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 
 }
 .article-box {
@@ -74,9 +113,14 @@
 	padding: 15px;
 }
 .mshobeli-article {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-top:30px;
 }
 .mshobeli-article p {
@@ -84,13 +128,22 @@
 	width: 100%;
 }
 .read {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 .images-wraper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .image-box {
 	width: 270px;
@@ -110,3 +163,97 @@
 	color: red;
 }
 
+
+
+
+/*Contact styles*/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.form-wraper {
+	max-width: 600px;
+	width:100%;
+	margin: 0 auto;
+
+}
+/*.input-group {
+	width: 100%;
+}*/
+.form-group {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin-bottom: 15px;
+}
+.input-group {
+	margin-top: 7px;
+	border:none;
+	border-bottom: 1px solid blue;
+	color: red;
+	text-transform: uppercase;
+}
+.input-group::-webkit-input-placeholder {
+	text-transform: capitalize;
+	color: blue;
+	padding-left: 10px;
+}
+.input-group::-moz-placeholder {
+	text-transform: capitalize;
+	color: blue;
+	padding-left: 10px;
+}
+.input-group:-ms-input-placeholder {
+	text-transform: capitalize;
+	color: blue;
+	padding-left: 10px;
+}
+.input-group::-ms-input-placeholder {
+	text-transform: capitalize;
+	color: blue;
+	padding-left: 10px;
+}
+.input-group::placeholder {
+	text-transform: capitalize;
+	color: blue;
+	padding-left: 10px;
+}
+.textarea-group:focus,
+.input-group:focus {
+	outline: none;
+}
+.textarea-group {
+	height: 200px;
+	resize: none;
+}
+.btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+.btn-submit {
+	background-color: blue;
+	color: #fff;
+	padding: 7px;
+	border: none;
+	/*border-bottom: 2px solid red;*/
+}
+/*input[type=text] {
+	background-color: red;
+}
+input[type=password] {
+	background-color: yellow;
+}*/
+.chekbox-group {
+	margin-bottom: 15px;
+}
